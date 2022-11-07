@@ -1,7 +1,13 @@
+import Loading from "../components/Loading"
+import MainBanner from "../components/MainBanner"
+import SectionOne from "../components/SectionOne"
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+    {/* <Loading /> */}
+      <MainBanner />
+      <SectionOne/>
+    </>
   )
 }
