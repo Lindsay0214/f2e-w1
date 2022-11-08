@@ -1,0 +1,117 @@
+.wrapper {
+    background-color: var(--primary-lightOrange);
+    height: 800px;
+}
+
+/* left */
+.left-star {
+    position: absolute;
+    top: 250px;
+    left: 60px;
+}
+
+.text-logo {
+    position: absolute;
+    top: 640px;
+    left: 120px;
+}
+
+/* center */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* center center */
+.center-center{
+    position: relative;
+}
+
+.title {
+    margin-left: 34px;
+}
+
+.main-text {
+    position: relative;
+    font-size: 54px;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.sub-text {
+    position: relative;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 130px;
+    margin-left: 35px;
+}
+
+.button {
+    position: absolute;
+    top: 535px;
+    left: 118px;
+}
+
+.link {
+    padding: 12px 10px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: black;
+}
+
+/* center left */
+.center-left {
+    position: relative;
+    margin-top: 360px;
+}
+
+.door-text {
+    position: relative;
+    font-weight: 900;
+    font-size: 32px;
+    z-index: 1;
+}
+
+.door {
+    position: absolute;
+    top: 35px;
+    left: 90px;
+}
+
+/* center right */
+.center-right {
+    position: relative;
+    margin-top: 400px;
+}
+
+.caterpillar-text {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.caterpillar {
+    position: absolute;
+    top: 15px;
+    left: -60px;
+}
+
+/* right */
+.right-star {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+}
+
+.square {
+    position: absolute;
+    right: 0;
+    top: 282px;
+}

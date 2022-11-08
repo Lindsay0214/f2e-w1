@@ -1,20 +1,21 @@
 import Image from "next/image"
-import confused from "../public/images/confused.svg"
-import Card from "../components/Card"
+import confused from "../../public/images/confused.svg"
+import Card from "../Card/Card"
+import styles from "./Section.module.css"
 
 const SectionOne = () => {
   return (
-    <div className="relative">
-        <div className='w-full h-20 bg-primary-yellow'></div>
-        <div className="bg-primary-lightOrigin">
+    <div className={styles.wrapper}>
+        <div className={styles.line}></div>
+        <div className={styles.bg}>
           {/* dot dot dot */}
-          <div className="flex justify-center py-24">
-            <div className="w-8 h-8 rounded-full mx-36 bg-primary-darkYellow"></div>
-            <div className="w-8 h-8 rounded-full mx-36 bg-primary-darkYellow"></div>
-            <div className="w-8 h-8 rounded-full mx-36 bg-primary-darkYellow"></div>
+          <div className={styles["dot-wrapper"]}>
+            <div className={styles.dot}></div>
+            <div className={styles.dot}></div>
+            <div className={styles.dot}></div>
           </div>
           {/* content */}
-          <div className="grid h-screen grid-flow-col grid-rows-3 px-10">
+          <div className={styles["card-wrapper"]}>
             <div></div>
             <div></div>
             <div>
@@ -32,8 +33,8 @@ const SectionOne = () => {
             <div></div>
           </div>
         </div>
-        <Image className="absolute right-0 bottom-20" src={confused} alt="confused"/>
-        <div className='w-full h-20 bg-primary-yellow'></div>
+        <Image className={styles.cute} src={confused} alt="confused"/>
+        <div className={styles.line}></div>
     </div>
   )
 }

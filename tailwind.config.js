@@ -29,7 +29,8 @@ module.exports = {
       },
       height: {
         loading: "25px",
-        card: "152px"
+        card: "152px",
+        long: "2745px"
       }
     },
   },

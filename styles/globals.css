@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-brown: #CFA575;
+    --primary-gray:"#4B4B4B"
+
+    /* green */
+    --primary-shadowGreen: "#A9C1AE",
+    --primary-green: #4E7B57; 
+
+    /* orange */
+    --primary-lightOrange: #F1EDE9;
+    --primary-darkOrange: "#CFA575",
+    --primary-shadowOrange: "#DFC5A7",
+
+    /* yellow */
+    --primary-yellow: "#EFE5A4",
+    --primary-darkYellow: "#D2C67A",
+}

@@ -1,0 +1,43 @@
+.wrapper {
+    position: relative;
+}
+
+.line {
+    height: 80px;
+    background-color: var(--primary-yellow);
+    border: 1px solid red;
+    z-index: 1000;
+    position: relative;
+}
+
+.bg {
+    background-color: var(--primary-lightOrigin);
+}
+
+.dot-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    margin: 0 150px;
+    border: 1px solid red;
+    margin-top: 76px;
+    background-color: var(--primary-darkYellow);
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-rows: 3;
+    gap: 10px;
+    margin-top: 46px;
+}
+
+.cute {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+}

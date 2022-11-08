@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;  
+  z-index: 1;
+}
+
+.color {
+    position: relative;
+    z-index: 2;
+    height: 152px;
+    width: 475px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 24px;
+    font-size: 52px;
+    font-weight: 900;
+    color: white;
+    line-height: 52px;
+}
+
+.sub {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 152px;
+    width: 475px;
+    border-radius: 20px;
+    z-index: 1;
+}
