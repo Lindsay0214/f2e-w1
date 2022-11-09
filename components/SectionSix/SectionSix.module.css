@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: #CFA575;
+    height: 100%;
+    width: 100vw;
+}
+
+.title {
+    color: white;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 142px;
+    padding-bottom: 46px;
+}
+
+.board-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.board {
+    margin: 0 2%;
+    background-color: white;
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,146 @@
+.wrapper {
+    height: 1890px;
+    background-color: #F1EDE9;
+}
+
+.title {
+    padding-top: 55px;
+    font-size: 100px;
+    font-weight: 900;
+    color: #4E7B57;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: -2%;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section {
+    margin-top: 65px;
+    width: 1000px;
+    height: 438px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 70px 60px;
+
+    position: relative;
+}
+
+.sub-title {
+    color: #4E7B57;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.board {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button {
+    color: white;
+    background-color: #4E7B57;
+    padding: 30px 146px;
+    font-size: 64px;
+    font-weight: 900;
+    border-radius: 20px;
+    letter-spacing: 14px;
+}
+
+.button-wrapper {
+    margin-top: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border-radius: 20px;
+    margin-top: 60px;
+    height: 20px;
+    width: 160px;
+    background-color: #69A575;
+}
+
+.border:nth-child(1) {
+    margin-right: 50px;
+    transform: rotate(52deg);
+}
+
+.border {
+    margin-left: 50px;
+    transform: rotate(-52deg);
+}
+
+.green-board {
+    background-color: #4E7B57;
+    width: 1042px;
+    height: 436px;
+    position: absolute;
+    left: -90%;
+    top: 13%;
+}
+
+.green-board-right {
+    background-color: #4E7B57;
+    width: 1042px;
+    height: 436px;
+    position: absolute;
+    right: -46%;
+    top: 13%;
+}
+
+.board-section {
+    position: relative;
+    max-width: 1920px;
+}
+
+.circle {
+    border-radius: 100%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 65px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1920px) {
+    .green-board-right {
+        right: -30%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+    .wrapper {
+        width: 100%;
+    }
+    .board-section {
+        /* max-width: 700px; */
+        display: none;
+    }
+    .green-board {
+        display: none;
+    }
+    .green-board-right {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+
+
+}

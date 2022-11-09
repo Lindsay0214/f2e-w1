@@ -1,17 +1,19 @@
 .wrapper {
     position: relative;
+    width: 100vw;
 }
 
 .line {
     height: 80px;
-    background-color: var(--primary-yellow);
-    border: 1px solid red;
-    z-index: 1000;
-    position: relative;
+    /* background-color: var(--primary-yellow); */
+    background-color: #EFE5A4;
 }
 
 .bg {
-    background-color: var(--primary-lightOrigin);
+    position: relative;
+    /* background-color: var(--primary-lightOrigin); */
+    background-color: #F1EDE9;
+    height: 810px;
 }
 
 .dot-wrapper {
@@ -20,13 +22,14 @@
 }
 
 .dot {
+    /* ! not work */
     width: 33px;
     height: 33px;
     border-radius: 100%;
     margin: 0 150px;
-    border: 1px solid red;
     margin-top: 76px;
-    background-color: var(--primary-darkYellow);
+    /* background-color: var(--primary-darkYellow); */
+    background-color: #D2C67A;
 }
 
 .card-wrapper {
@@ -35,6 +38,26 @@
     gap: 10px;
     margin-top: 46px;
 }
+
+.card:nth-child(1) {
+   width: 500px;
+   position: absolute;
+   top: 18%;
+   right: 3%;
+}
+.card:nth-child(2) {
+    width: 500px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+ }
+ .card:nth-child(3) {
+    width: 500px;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+ }
 
 .cute {
     position: absolute;

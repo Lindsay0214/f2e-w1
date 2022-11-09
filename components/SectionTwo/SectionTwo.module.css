@@ -1,0 +1,129 @@
+.wrapper {
+    position: relative;
+    height: 100vh;
+    /* background-color: var(--primary-shadowGreen); */
+    background-color: #A9C1AE;
+    height: 2083px;
+    width: 100vw;
+}
+
+/* white circle */
+.white-circle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.white-circle {
+    margin-top: 109px;
+    height: 1350px;
+    z-index: 1;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    /* color: var(--primary-gray); */
+    color: #4B4B4B;
+    position: absolute;
+    top: 2%;
+}
+
+.title-bg {
+    height: 140px;
+}
+
+.title-content-img {
+    width: 1030px;
+    height: 220px;
+    margin-top: 100px;
+}
+
+.flower {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    z-index: 1;
+}
+
+/* brown circle */
+.brown-circle-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -710px;
+}
+
+.brown-circle {
+    height: 1333px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid red;
+}
+
+.brown-circle-title {
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 2;
+}
+
+.brown-circle-title:nth-child(2) {
+    /* background-color: var(--primary-gray); */
+    background-color: #4B4B4B;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+.brown-circle-content {
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    top: 38%;
+    left: 56%;
+    transform: translate(-56%, -3%);
+    z-index: 2;
+}
+
+.star {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    transform: translate(-30%, -18%);
+    z-index: 2;
+}
+
+.green-flower {
+    position: absolute;
+    top: 42%;
+    right: 13%;
+    transform: translate(-10%, -40%);
+}
+
+.news-sticker {
+    position: absolute;
+    bottom: 0;
+}
+
+.top-news-sticker {
+    position: absolute;
+    top: 0;
+}

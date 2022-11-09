@@ -8,6 +8,7 @@ import leftStar from "../../public/images/bomb-star1.svg"
 import door from "../../public/images/door.svg"
 import caterpillar from "../../public/images/caterpillar.svg"
 import frontend from "../../public/images/frontend.svg"
+import wow from "../../public/images/Banner/wow.svg"
 
 const Banner = () => {
   return (
@@ -22,7 +23,10 @@ const Banner = () => {
       <div className={styles.center}>
         {/* center left */}
         <div className={styles["center-left"]}>
-          <p className={styles["door-text"]}>I don&apos;t <br/> have a time... </p>
+          <p className={styles["door-text"]}>
+            I don&apos;t <br/> have a time... 
+          </p>
+          <p className={styles["hover-text"]}>WOW! <br/> 修煉精神時光屋</p>
           <Image className={styles.door} src={door} alt="door" />
         </div>
 

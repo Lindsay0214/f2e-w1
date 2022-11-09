@@ -1,0 +1,105 @@
+.wrapper {
+   height: 2500px; 
+   background-color: #F1EDE9;
+   position: relative;
+   letter-spacing: 2px;
+   width: 100vw;
+}
+
+.star {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.green-circle {
+    position: absolute;
+    top: 390px;
+    left: -200px;
+    z-index: 0;
+}
+
+.smile {
+    position: absolute;
+    z-index: 2;
+    top: 1120px;
+    left: 30%;
+}
+
+.bottom-star {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+
+/* content */
+.title-wrapper-one {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+}
+.title-wrapper-two {
+    position: absolute;
+    top: 40%;
+    left: 68%;
+}
+.title-wrapper-three {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+.title-wrapper-four {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.title:nth-child(2) {
+    color: #4E7B57;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.content {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.green-flower {
+    position: absolute;
+    bottom: 24%;
+    right: 5%;
+}
+
+.line-one {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: rotate(14deg);
+}
+
+.line-two {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: rotate(20deg);
+}
+
+.line-three {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    height: 600px;
+}
+
+.line-four {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    transform: rotate(150deg);
+}
