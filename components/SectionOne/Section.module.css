@@ -1,6 +1,8 @@
 .wrapper {
     position: relative;
     width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .line {
@@ -22,7 +24,6 @@
 }
 
 .dot {
-    /* ! not work */
     width: 33px;
     height: 33px;
     border-radius: 100%;

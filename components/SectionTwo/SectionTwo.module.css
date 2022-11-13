@@ -7,6 +7,31 @@
     width: 100vw;
 }
 
+.f2e {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.f2eb {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+  .loop {
+    line-height: 100%;
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 800;
+    color: transparent;
+    white-space: nowrap; /*文字必須設為nowrap，否則文字會自動換行*/
+    height: 100%;
+    text-shadow: -1px 1px 0 white, 1px 1px 0 white,1px -1px 0 white,-1px -1px 0 white; 
+  }
+  .loop > span {
+    display: inline-block;
+  }
+
 /* white circle */
 .white-circle-section {
     display: flex;
@@ -71,7 +96,6 @@
     height: 1333px;
     position: relative;
     z-index: 1;
-    border: 1px solid red;
 }
 
 .brown-circle-title {

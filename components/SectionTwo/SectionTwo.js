@@ -1,3 +1,4 @@
+import { useRef, useLayoutEffect } from "react"
 import Image from "next/image"
 import bigCircle from "../../public/images/sectionTwo/big-circle.svg"
 import titleBackground from "../../public/images/sectionTwo/title-background.svg"
@@ -6,14 +7,47 @@ import brownCircle from "../../public/images/sectionTwo/brown-circle.svg"
 import greenFlower from "../../public/images/sectionTwo/green-flower.svg"
 import styles from "./SectionTwo.module.css"
 import star from "../../public/images/bomb-star1.svg"
-import newsSticker from "../../public/images/sectionTwo/news-sticker.svg"
+import { gsap } from "gsap";
 
 const SectionTwo = () => {
+  const loopRef1 = useRef(null)
+  const loopRef2 = useRef(null)
+
+  useLayoutEffect(() => {
+    gsap.to(loopRef1.current, {
+      xPercent: "-50", 
+      ease: "none",
+      duration: 10,
+      repeat: -1,
+    });
+    gsap.to(loopRef2.current, {
+      xPercent: "-50", 
+      ease: "none",
+      duration: 10,
+      repeat: -1,
+    });
+  }, [])
+
   return (
     <div className={styles.wrapper}>
         {/* white circle */}
         <div className={styles["white-circle-section"]}>
-          <Image className={styles["top-news-sticker"]} src={newsSticker} alt="news-sticker"/>
+          <section className={styles.f2e}>
+            <ul className={styles.loop} ref={loopRef1}>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+            </ul>
+          </section>
           {/* white circle */}
           <Image className={styles["white-circle"]} src={bigCircle} alt="big-circle"/>
           {/* title */}
@@ -38,7 +72,22 @@ const SectionTwo = () => {
             <div className={styles["brown-circle-content"]}>各路廠商強強聯手! <br/> 共同設計出接地氣的網頁互動挑戰關卡</div>
           </div>
           <Image className={styles["green-flower"]} src={greenFlower} alt="green-glower"/>
-          <Image className={styles["news-sticker"]} src={newsSticker} alt="news-sticker"/>
+          <section className={styles.f2eb}>
+            <ul className={styles.loop} ref={loopRef2}>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+              <li>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+                <span> THE F2E THE F2E THE F2E THE F2E </span>
+              </li>
+            </ul>
+          </section>
         </div>
     </div>
   )

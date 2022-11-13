@@ -8,7 +8,8 @@ import leftStar from "../../public/images/bomb-star1.svg"
 import door from "../../public/images/door.svg"
 import caterpillar from "../../public/images/caterpillar.svg"
 import frontend from "../../public/images/frontend.svg"
-import wow from "../../public/images/Banner/wow.svg"
+import butterfly from "../../public/images/Banner/butterfly-star.svg"
+import cx from "classnames"
 
 const Banner = () => {
   return (
@@ -47,6 +48,10 @@ const Banner = () => {
         {/* center right */}
         <div className={styles["center-right"]}>
           <p className={styles["caterpillar-text"]}>ummm... </p>
+          <div className={cx(styles["hover-text"], styles.icon)}>
+            <Image className={styles.butterfly} src={butterfly} alt="butterfly" />
+            <p className={styles["butterfly-text"]}><span className={styles.span}>butterfly</span> <br/> ~Timeflies~</p>
+          </div>
           <Image className={styles.caterpillar} src={caterpillar} alt="caterpillar" />
         </div>
       </div>
